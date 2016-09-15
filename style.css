@@ -54,7 +54,7 @@ input[type="submit"] {
 }
 
 .profile-circular {
-    background: url('/img/profile-picture.jpeg');
+    background: url('/img/profile-picture.jpg');
     background-size: cover;
     margin-top: 100px;
     margin-left: auto;
