@@ -7,7 +7,8 @@ body {
     background-attachment: fixed;
     color: white;
     margin: auto;
-    width: 900px;
+    width: 100%;
+    max-width: 900px;
     font-family: 'Raleway', sans-serif;
 }
 
