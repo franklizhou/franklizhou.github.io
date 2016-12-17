@@ -7,11 +7,16 @@ body {
     background-attachment: fixed;
     color: white;
     margin: auto;
+    max-width: 900px;
     font-family: 'Raleway', sans-serif;
 }
 
 h1 {
     font-size: 3em;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 h2 {
@@ -20,10 +25,24 @@ h2 {
 
 h3 {
     font-size: 1.5em;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+h4 {
+    font-size: 1.2em;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 p {
     font-size: 1em;
+    line-height: 120%;
+    text-align: left;
 }
 
 section {
@@ -31,21 +50,8 @@ section {
     margin-left: auto;
 }
 
-#wrap {
-   width: 100%;
-   margin:0 auto;
-}
-#left_col {
-   float: left;
-   text-align: left;
-   width: 50%;
-   margin-left: 10%
-}
-#right_col {
-   float: right;
-   text-align: right;
-   width: 30%;
-   margin-right: 10%;
+.images { 
+  align-content: left;
 }
 
 .profile-circular {

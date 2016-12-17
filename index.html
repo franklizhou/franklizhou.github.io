@@ -15,8 +15,8 @@
     <div class="profile-circular"></div>
     <h1>Frank Zhou</h1>
 
-    <p>Electrical Engineering Major</p>
-    <p>Caltech Class of 2017</p>
+    <h4>Electrical Engineering Major</h4>
+    <h4>Caltech Class of 2017</h4>
 
     <div id="icons" class ="row">
         <a class="icon" href="resume.pdf"><i class="fa fa-file-text-o fa-2x"></i></a>
@@ -27,14 +27,18 @@
 
 
 
-    <div id="projects">
-    	<h2>Projects</h2>
+    <div id="course projects">
+    	<h2>Course Projects</h2>
+    	<p> These are some projects that I have completed for courses I have taken at Caltech. </p>
     	<div id="blackfin">
-    	    <div id="wrap">
-			        <h3>Microprocessor Systems Laboratory (EE52) - Blackfin MP3 Player</h3>
-			</div>
-
-
+			<h3>Microprocessor Systems Laboratory (EE52) - Blackfin MP3 Player</h3>
+			<h4>January 2015 - July 2016 </h4>
+			<p> The Blackfin MP3 Player is a microprocessor based system which is capable of playing MP3 files stored 
+				on a FAT formatted hard drive. I designed and created a fully functional MP3 player in Caltech's 
+				Microprocessor Systems Laboratory course. The MP3 player has microprocessor, display, keypad, audio 
+				output, IDE, DRAM, SRAM, and ROM blocks. Firmware was written in a mix of C and assembly for the 
+				BlackfinDSP core.
+			</p>
 	    	<a href="./proj/Blackfin001.pdf"><img data-caption="" src="./proj/Blackfin001.jpg" height="160" width="230"></a>
 	    	<a href="./proj/Blackfin003.pdf"><img data-caption="" src="./proj/Blackfin003.jpg" height="160" width="230"></a>
 	    	<a href="./proj/Blackfin002.pdf"><img data-caption="" src="./proj/Blackfin002.jpg" height="160" width="230"></a>
@@ -45,6 +49,16 @@
 
     	<div id="stethoscope">
 	    	<h3>Analog Electronics Project (EE90) - Electronic Stethoscope</h3>
+	    	<h4>April 2016 - June 2016 </h4>
+	    	<p> The electronic stethoscope outputs captured sounds through a headphone jack and was designed to satisfy 
+	    	the requirements of Caltech's Analog Electronics Project course. The electronic stethoscope consists of a 
+	    	piezoelectric microphone, a fourth order differential preamp filter, an audio power amplifier, and a level
+	    	sensing circuit. The user can control the volume by adjusting a potentiometer and visually determine the 
+	    	output levels by looking at a series of LEDs. The components are mounted on a custom PCB and the entire 
+	    	project is packaged in a MDF box. 
+	    	</p>
+
+	    	<a href="./proj/Stethoscope.jpg"><img data-caption="" src="./proj/Stethoscope.jpg" height="160" width="230"></a>
 	    	<a href="./proj/Stethoscope005.pdf"><img data-caption="" src="./proj/Stethoscope005.jpg" height="160" width="230"></a>
 	    	<a href="./proj/Stethoscope002.pdf"><img data-caption="" src="./proj/Stethoscope002.jpg" height="160" width="230"></a>
 	    	<a href="./proj/Stethoscope001.pdf"><img data-caption="" src="./proj/Stethoscope001.jpg" height="160" width="230"></a>
@@ -52,15 +66,45 @@
 	    	<a href="./proj/Stethoscope003.pdf"><img data-caption="" src="./proj/Stethoscope003.jpg" height="160" width="230"></a>
 	    	<a href="./proj/Stethoscope006.pdf"><img data-caption="" src="./proj/Stethoscope006.jpg" height="160" width="230"></a>
     	</div>
+    </div>
 
+    <div id="crt projects">
+    	<h2>Caltech Robotics Team Projects</h2>
+    	<p> The Caltech Robotics Team competes in AUVSI's Robosub competition. The Robosub competition is an 
+    	international autonomous underwater vehicle competition that takes place annually in the six million gallon 
+    	TRANSDEC pool in San Diego. Each year, the Caltech Robotics Team completely rethinks and redesigns the 
+    	mechanical and electrical subsystems. In 2016, the Caltech Robotics Team won first place out of over fifty 
+    	teams. 
+    	</p>
+    	<a href="./proj/CRT001.jpg"><img data-caption="" src="./proj/CRT001.jpg" height="160" width="230"></a>
+	    <a href="./proj/CRT002.jpg"><img data-caption="" src="./proj/CRT002.jpg" height="160" width="230"></a>
+	    <a href="./proj/CRT003.jpg"><img data-caption="" src="./proj/CRT003.jpg" height="160" width="230"></a>
+
+    	<p> I am currently leading the electrical subteam for the 2016-2017 competition year. The projects below are 
+    	modules I worked on for the 2015-2016 vehicle. The core, pneumatics, and sensor modules all feature ARM-based
+    	microcontrollers and firmware for the three modules was written in C.
+    	</p>
     	<div id="core board">
-	    	<h3>Caltech Robotics Team - Core Board</h3>
+	    	<h3>Caltech Robotics Team - Core Module</h3>
+	    	<h4>October 2015 - July 2016 </h4>
+	    	<p> The core module acts as a TTL to CAN (Controller Area Network) master. The onboard computer communicates 
+	    	with the core module through a TTL connection and the core module manages a CAN bus to facilitate 
+	    	communication between the computer and the pneumatics and sensor modules. The core module parses incoming 
+	    	TTL packets and translates the messages to CAN packets and vice versa. 
+	    	</p>
 	    	<a href="./proj/Core001.pdf"><img data-caption="" src="./proj/Core001.jpg" height="160" width="230"></a>
 	    	<a href="./proj/Core002.pdf"><img data-caption="" src="./proj/Core002.jpg" height="160" width="230"></a>
     	</div>
 
     	<div id="pneumatics board">
-	    	<h3>Caltech Robotics Team - Pneumatics Board</h3>
+	    	<h3>Caltech Robotics Team - Pneumatics Module</h3>
+	    	<h4>October 2015 - July 2016 </h4>
+	    	<p> The pneumatics module is responsible for actuating solenoids to trigger pneumatic valves that manipulate
+	    	grippers, shoot torpedoes, and drop markers. The pneumatics module receives commands from the core module 
+	    	through the CAN bus and sends information about the current state of all pneumatic solenoids to the core 
+	    	module through the CAN bus. The pneumatics module features fourteen solenoid outputs. GPIOs from the ARM
+	    	microcontroller are optoisolated and the solenoids are actuated using p-channel MOSFETs. 
+	    	</p>
 	    	<a href="./proj/Pneumatics004.pdf"><img data-caption="" src="./proj/Pneumatics004.jpg" height="160" width="230"></a>
 	    	<a href="./proj/Pneumatics001.pdf"><img data-caption="" src="./proj/Pneumatics001.jpg" height="160" width="230"></a>
 	    	<a href="./proj/Pneumatics002.pdf"><img data-caption="" src="./proj/Pneumatics002.jpg" height="160" width="230"></a>
@@ -69,7 +113,15 @@
     	</div>
 
     	<div id="sensor board">
-	    	<h3>Caltech Robotics Team - Sensor Board</h3>
+	    	<h3>Caltech Robotics Team - Sensor Module</h3>
+	    	<h4>October 2015 - July 2016 </h4>
+	    	<p> The sensor module is responsible for managing incoming sensor data and controlling individually 
+	    	addressable LED strips that indicate the current status of the vehicle. Analog data inputs are filtered 
+	    	with a 100 Hz second-order Bessel low pass filter and read with ADCs and reed switch inputs are optoisolated
+	    	and read with GPIOs. The sensor board reports the status of all sensor inputs to the core module through the 
+	    	CAN bus every 0.1s. The sensor board also received commands from the core module to control the color of 
+	    	each LED in the LED strip.
+	    	</p>
 	    	<a href="./proj/Sensor005.pdf"><img data-caption="" src="./proj/Sensor005.jpg" height="160" width="230"></a>
 	    	<a href="./proj/Sensor003.pdf"><img data-caption="" src="./proj/Sensor003.jpg" height="160" width="230"></a>
 	    	<a href="./proj/Sensor004.pdf"><img data-caption="" src="./proj/Sensor004.jpg" height="160" width="230"></a>
@@ -78,7 +130,12 @@
     	</div>
 
     	<div id="quad uart">
-	    	<h3>Caltech Robotics Team - USB to Quad UART Board</h3>
+	    	<h3>Caltech Robotics Team - USB to RS232/TTL Module</h3>
+	    	<h4>October 2015 - July 2016 </h4>
+	    	<p> The USB to RS232/TTL module uses a FTDI chip to split a single COM port on the onboard computer into 
+	    	four different serial channels. The four serial channels are used to establish communication between the 
+	    	computer and various sensors and modules.
+	    	</p>
 	    	<a href="./proj/QuadUart003.pdf"><img data-caption="" src="./proj/QuadUart003.jpg" height="160" width="230"></a>
 	    	<a href="./proj/QuadUart005.pdf"><img data-caption="" src="./proj/QuadUart005.jpg" height="160" width="230"></a>
 	    	<a href="./proj/QuadUart004.pdf"><img data-caption="" src="./proj/QuadUart004.jpg" height="160" width="230"></a>
@@ -86,21 +143,56 @@
 	    	<a href="./proj/QuadUart001.pdf"><img data-caption="" src="./proj/QuadUart001.jpg" height="160" width="230"></a>
 	    	<a href="./proj/QuadUart006.pdf"><img data-caption="" src="./proj/QuadUart006.jpg" height="160" width="230"></a>
     	</div>
+    </div>
 
-    	<div id="ru board">
-	    	<h3>Wireless Power Feedback Control - Receiver Unit Controller</h3>
+
+    <div id="research projects">
+    	<h2>Research Projects</h2>
+    	<p> These...
+    	</p>
+    	<div id="wireless feedback">
+	    	<h3>Wireless Power Feedback for Microwave Wireless Power</h3>
+	    	<h4>March 2016 - August 2016 </h4>
+	    	<p> A microwave wireless power system uses phased arrays to wirelessly direct power over medium to long 
+	    	distances. The system I worked on is controlled using a computer running MATLAB scripts and sends power 
+	    	through transmitter antennas. In order for wireless power to be effective, the transmitter and the receiver 
+	    	must be able to communicate wirelessly. I developed a wireless feedback system capable of selectively 
+	    	optimizing power transfer to a single receiver.
+	    	</p>
+	    	<p>
+	    	The transmitter and the receiver communicate using half-duplex transceivers. Since the transceivers cannot 
+	    	send and receive data simultaneously, a robust communication protocol is necessary to control which 
+	    	transceiver is transmitting data and which transceiver is receiving data. The communication protocol I
+	    	developed allows the transmitter to search for all receivers in the area, send and receive pings, and send 
+	    	data requests and receive data responses.
+	    	</p>
+	    	<p> In addition to communicating with the transmitter controller, the receiver controller is responsbile for
+	    	charging a connected phone or tablet. The receiver controller is powered by the connected phone or tablet, 
+	    	the onboard LiPo battery, or the received wireless power. The receiver controller actively monitors the 
+	    	voltages of the received wireless power and onboard battery to determine which is the more appropriate power
+	    	source. The receiver controller also performs load switching on the received wireless power to determine 
+	    	if the received wireless power is enough to power receiver controller, charge the LiPo battery, and charge
+	    	the connected device.
+	    	</p>
+	    	<div class="images">
+	    	<a href="./proj/RUBoard006.jpg"><img data-caption="" src="./proj/RUBoard006.jpg" height="160" width="230"></a>
 	    	<a href="./proj/RUBoard001.pdf"><img data-caption="" src="./proj/RUBoard001.jpg" height="160" width="230"></a>
 	    	<a href="./proj/RUBoard002.pdf"><img data-caption="" src="./proj/RUBoard002.jpg" height="160" width="230"></a>
 	    	<a href="./proj/RUBoard003.pdf"><img data-caption="" src="./proj/RUBoard003.jpg" height="160" width="230"></a>
 	    	<a href="./proj/RUBoard004.pdf"><img data-caption="" src="./proj/RUBoard004.jpg" height="160" width="230"></a>
 	    	<a href="./proj/RUBoard005.pdf"><img data-caption="" src="./proj/RUBoard005.jpg" height="160" width="230"></a>
-    	</div>
-
-    	<div id="gu board">
-	    	<h3>Wireless Power Feedback Control - Generator Unit Controller</h3>
+	    	</div>
+	    	<p> The transmitter controller acts as an interface between the computer, the transmitter antennas, and the 
+	    	receiver controller. The transmitter controller communicates with the computer over SPI, controls the 
+	    	phases of the transmitter antennas with a parallel bus, and communicates with the receiver controller
+	    	through the wireless transceiver.
+	    	</p>
+	    	<div class="images">
+	    	<a href="./proj/GUBoard004.jpg"><img data-caption="" src="./proj/GUBoard004.jpg" height="160" width="230"></a>
 	    	<a href="./proj/GUBoard002.pdf"><img data-caption="" src="./proj/GUBoard002.jpg" height="160" width="230"></a>
 	    	<a href="./proj/GUBoard001.pdf"><img data-caption="" src="./proj/GUBoard001.jpg" height="160" width="230"></a>
 	    	<a href="./proj/GUBoard003.pdf"><img data-caption="" src="./proj/GUBoard003.jpg" height="160" width="230"></a>
+	    	</div>
     	</div>
     </div>
 
