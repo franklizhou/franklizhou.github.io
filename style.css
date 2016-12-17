@@ -51,9 +51,9 @@ section {
     margin-left: auto;
 }
 
-.images { 
-  align-content: left;
-  align-items: left;
+.project-container { 
+  width: 100vw;
+  max-width: 900px;
 }
 
 .profile-circular {
