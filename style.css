@@ -7,7 +7,7 @@ body {
     background-attachment: fixed;
     color: white;
     margin: auto;
-    max-width: 900px;
+    width: 900px;
     font-family: 'Raleway', sans-serif;
 }
 
@@ -52,6 +52,7 @@ section {
 
 .images { 
   align-content: left;
+  align-items: left;
 }
 
 .profile-circular {
