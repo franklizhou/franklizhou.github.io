@@ -35,8 +35,7 @@
 			<p> The Blackfin MP3 Player is a microprocessor based system which is capable of playing MP3 files stored 
 				on a FAT formatted hard drive. I designed and created a fully functional MP3 player in Caltech's 
 				Microprocessor Systems Laboratory course. The MP3 player has microprocessor, display, keypad, audio 
-				output, IDE, DRAM, SRAM, and ROM blocks. Firmware was written in a mix of C and assembly for the 
-				BlackfinDSP core.
+				output, IDE, DRAM, SRAM, and ROM blocks. Firmware was written in a mix of C and Blackfin DSP assembly.
 			</p>
 			<div class="project-container">
 				<a href="./proj/Blackfin001.pdf"><img data-caption="" src="./proj/Blackfin001.jpg" height="160" width="230"></a>
@@ -73,10 +72,10 @@
 			<h3>Experimental Projects in Electronic Circuits (EE91) - Acoustic Communication System</h3>
 			<h4>October 2016 - December 2016 </h4>
 			<p> The acoustic communication system allows two laptops to send pings wirelessly through sound. The 
-			acoustic communication system consists of two boads. Each board has four microphone circuits, a 
+			acoustic communication system consists of two boards. Each board has four microphone circuits, a 
 			quad-sampling ADC, a microcontroller, and a piezoelectric buzzer. Each microphone circuit consists of a 
-			microphone, a microphone preamplifier, and a fourth order differential low pass filter and the four 
-			microphone circuits are arranged in a square. The quad-sampling ADC simulatenously samples all four channels
+			microphone, a microphone preamplifier, and a fourth order differential low pass filter. The four 
+			microphone circuits are arranged in a square. The quad-sampling ADC simultaneously samples all four channels
 			and interrupts the microcontroller. The microcontroller reads the voltage levels of all four levels and 
 			stores the data in a buffer. The microcontroller calculates the amplitude of the signal at a specific 
 			target frequency. Each time the amplitude surpasses a set threshold, the board uses the phase differences 
@@ -134,7 +133,7 @@
 			grippers, shoot torpedoes, and drop markers. The pneumatics module receives commands from the core module 
 			through the CAN bus and sends information about the current state of all pneumatic solenoids to the core 
 			module through the CAN bus. The pneumatics module features fourteen solenoid outputs. GPIOs from the ARM
-			microcontroller are optoisolated and the solenoids are actuated using p-channel MOSFETs. 
+			microcontroller are optoisolated and the solenoids are actuated using logic level p-channel MOSFETs. 
 			</p>
 			<div class="project-container">
 				<a href="./proj/Pneumatics004.pdf"><img data-caption="" src="./proj/Pneumatics004.jpg" height="160" width="230"></a>
@@ -202,7 +201,7 @@
 			developed allows the transmitter to search for all receivers in the area, send and receive pings, and send 
 			data requests and receive data responses.
 			</p>
-			<p> In addition to communicating with the transmitter controller, the receiver controller is responsbile for
+			<p> In addition to communicating with the transmitter controller, the receiver controller is responsible for
 			charging a connected phone or tablet. The receiver controller is powered by the connected phone or tablet, 
 			the onboard LiPo battery, or the received wireless power. The receiver controller actively monitors the 
 			voltages of the received wireless power and onboard battery to determine which is the more appropriate power
